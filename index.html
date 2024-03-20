@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las noticias más recientes de Argentina y del mundo - La Argentinidad</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="overlay"></div>
+    <div class="grid-wrapper wrapper">
+        <header>
+            <section class="header">
+                <div class="logo-container">
+                    <a href="./index.html" class="logo">
+                        <h1>La Argentinidad</h1>
+                    </a>
+                </div>
+
+                <!------HEADER OPTIONS------>
+                <div class="header-options">
+
+                    <div class="options">
+                        <button class="secciones" id="secciones-btn">
+                            <i class="fa-solid fa-bars"></i> Secciones
+                        </button>
+                        <button class="buscar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button id="capturar-entradas-btn">Crear una noticia (sin imágen)</button>
+                        <button id="buscarPorTituloBtn">Buscar por Título</button>
+                        
+
+                        
+                    </div>
+                    
+
+                    <!------INICIAR SESIÓN------>
+                    <a href="" class="iniciar-sesion">Iniciar sesión</a>
+                </div>
+
+            </section>
+
+            <!--------- DÓLAR INFO. --------->
+            <section class="header-dolar-info">
+                <ul>
+                    <li><a href="">Dólar Blue: <strong>$1025</strong></a></li>
+                    <li><a href="">Dólar CCL: <strong>$1070</strong></a></li>
+                    <li><a href="">Dólar oficial: <strong>$895</strong></a></li>
+                    <li><a href="">Dólar turista: <strong>$1432</strong></a></li>
+                </ul>
+            </section>
+
+            <!--------- NAV --------->
+            <nav>
+                <div class="secciones-nav-header">
+                    <h2 class="nav-logo">La Argentinidad</h2>
+                    <button class="btn-cerrar" id="btn-cerrar">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="">Política</a></li>
+                    <li><a href="">Economía</a></li>
+                    <li><a href="">Noticias del mundo</a></li>
+                    <li>
+                        <a href="">Sociedad</a>
+                        <ul class="dropdown-secciones">
+                            <li><a href="">Seguridad</a></li>
+                            <li><a href="">Educación</a></li>
+                            <li><a href="">Cultura</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Opinión</a></li>
+                    <li><a href="">Deportes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="noticias" id="resultadosContainer">
+                <!----- aquí colocará noticias------>
+                <h2>Escribe una noticia</h2>
+                <p>*Una vez que filtre noticias por título, no podrá volver a ver todas las noticias creadas; se reiniciara todo</p>
+            </section>
+        </main>
+        <aside>
+            <p>Aquí iría el contenido del aside, pero no me dio tiempo :/</p>
+        </aside>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

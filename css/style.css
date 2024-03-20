@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    /*----- Reset -----*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*----- Font Family -----*/
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #333333;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+strong{
+    font-weight: bold;
+}
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*<<<---------- Header ---------->>>*/
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 0;
+}
+header .header .logo-container{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid #cccccc;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+header .header .logo-container .logo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+header .header .logo-container .logo h1 {
+    color: #003366;
+    transition: .2s ease;
+}
+header .header .logo-container .logo h1:hover {
+    color: #3375b8;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #cccccc;
+}
+.header-options {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-options .options {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header-options .options .secciones {
+    padding: 6px 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-options .options .secciones:hover {
+    background-color: #dddddd;
+}
+.header-options .options button i {
+    font-size: 2rem;
+    color: #333333;
+}
+.header-options .options .buscar i:hover {
+    color: #dddddd;
+}
+
+.header-dolar-info {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid #cccccc;
+}
+.header-dolar-info ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: none;
+}
+
+/*SECCIONES BTN FUNCTIONS*/
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 10; /* Asegura que el overlay esté en la parte superior */
+    display: none; /* Inicialmente oculto */
+}
+
+.overlay.active {
+    display: block; /* Muestra el overlay cuando está activo */
+}
+
+nav.secciones-active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 325px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    padding: 20px;
+    transition: .3s ease;
+    z-index: 20;
+}
+
+nav.secciones-active .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+nav.secciones-active ul li a{
+    color: #333333;
+    transition: .2s ease;
+}
+nav.secciones-active ul li a:hover{
+    color: #666666;
+}
+
+.secciones-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.secciones-nav-header .btn-cerrar i:hover{
+    color: #666666;
+}
+nav.secciones-active .nav-logo{
+    color: #003366;
+    text-transform: uppercase;
+    position: relative;
+}
+.dropdown-secciones {
+    display: none;
+}
+
+/*GENERALIDADES LOL*/
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "header header header header"
+        "main main main aside"
+        "main main main aside"
+        "main main main aside"
+        "footer footer footer footer"
+    ;
+    gap: 20px;
+}
+
+header{
+    grid-area: header;
+}
+main {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 20px;
+}
+aside {
+    grid-area: aside;
+    background-color: #ffffff;
+}
+footer {
+    grid-area: footer;
+}
+
+/*----- MAIN PAGE NOTICIAS -----*/
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.noticia-item {
+    grid-column: span 1;
+}
+.noticia-banner {
+    grid-column: span 3;
+}
+.noticia-item a img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/*---------- FOOTER ----------*/
+
+footer {
+    background-color: #101010;
+    padding: 80px 20px;
+}
+footer h2 {
+    color: #ffffff;
+}
