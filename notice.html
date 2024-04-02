@@ -41,7 +41,7 @@
                         <button class="dark-mode-toggle" id="dark-mode-toggle">
                             <i class="fa-solid fa-sun"></i>
                         </button>
-                        <button class="iniciar-sesion" id="iniciar-sesion">Iniciar sesión</button>
+                        <button class="iniciar-sesion">Iniciar sesión</button>
                     </div>
                 </section>
 
@@ -68,7 +68,7 @@
                 <ul class="nav-links">
                     <li><button id="politica">Política</button></li>
                     <li><button id="economia">Economía</button></li>
-                    <li><button id="noticias-del-mundo">Noticias del mundo</button></li>
+                    <li><button id="mundo">Noticias del mundo</button></li>
                     <li>
                         <button href="">Sociedad</button>
                         <ul class="dropdown-secciones">
@@ -84,7 +84,7 @@
         </header>
         <main>
 
-            <section class="noticias" id="notices-container">
+            <section id="notice-container">
                 <!---- CARGA DINÁMICA DE CONTENIDO ---->
 
             </section>
@@ -100,11 +100,11 @@
                     <div class="subtitle-list flex">
                         <time class="--font-2xs" datetime="08:30:00">08:30</time>
                         <article class="sidebar-notice">
-                            <a href="./notice.html">
+                            <button>
                                 <section class="description-container">
                                     <h2>Noticia 1</h2>
                                 </section>
-                            </a>
+                            </button>
                         </article>
                     </div>
                 </li>
@@ -112,11 +112,11 @@
                     <div>
                         <time class="--font-2xs" datetime="15:45:00">15:45</time>
                         <article class="sidebar-notice">
-                            <a href="./notice.html">
+                            <button>
                                 <section class="description-container">
                                     <h2>Noticia 2</h2>
                                 </section>
-                            </a>
+                            </button>
                         </article>
                     </div>
                 </li>
@@ -124,11 +124,11 @@
                     <div>
                         <time class="--font-2xs" datetime="11:20:00">11:20</time>
                         <article class="sidebar-notice">
-                            <a href="./notice.html">
+                            <button>
                                 <section class="description-container">
                                     <h2>Noticia 3</h2>
                                 </section>
-                            </a>
+                            </button>
                         </article>
                     </div>
                 </li>
@@ -136,11 +136,11 @@
                     <div>
                         <time class="--font-2xs" datetime="09:00:00">09:00</time>
                         <article class="sidebar-notice">
-                            <a href="./notice.html">
+                            <button>
                                 <section class="description-container">
                                     <h2>Noticia 4</h2>
                                 </section>
-                            </a>
+                            </button>
                         </article>
                     </div>
                 </li>
@@ -148,11 +148,11 @@
                     <div>
                         <time class="--font-2xs" datetime="14:10:00">14:10</time>
                         <article class="sidebar-notice">
-                            <a href="./notice.html">
+                            <button>
                                 <section class="description-container">
                                     <h2>Noticia 5</h2>
                                 </section>
-                            </a>
+                            </button>
                         </article>
                     </div>
                 </li>
@@ -163,6 +163,7 @@
         </footer>
     </div>
 
+    <script src="./js/notice.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/dark-mode.js"></script>
 
