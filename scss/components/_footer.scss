@@ -1,0 +1,36 @@
+/*---------- FOOTER ----------*/
+footer {
+	background-color: $color-casi-negro;
+	padding: 80px 20px;
+	text-align: center;
+	h2 {
+		color: $color-blanco;
+		font-size: 1.2rem;
+	}
+	.social-media {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			margin-top: 40px;
+			li {
+				a {
+					color: $color-fondo;
+					background-color: $color-negro;
+					padding: 15px;
+					border-radius: 50%;
+					font-size: 20px;
+					transition: all .3s ease;
+					&:hover {
+						color: $color-negro;
+						background-color: $color-fondo;
+					}
+				}
+			}
+		}
+	}
+}

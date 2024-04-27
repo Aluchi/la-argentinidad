@@ -1,13 +1,14 @@
-window.addEventListener('DOMContentLoaded', () => {
+function init() {
     const selectedNotice = JSON.parse(sessionStorage.getItem('selectedNotice'));
 
     if (selectedNotice) {
-        const noticeContent = document.querySelector('#notice-container');
+        const noticeContent = document.querySelector('#notices-container');
         noticeContent.innerHTML = `
             <div class="texto-principal-de-nota mb-20">
                 <span>${selectedNotice.section}</span>
                 <h1>${selectedNotice.title}</h1>
                 <p>${selectedNotice.desc}</p>
+                <span>${selectedNotice.noticeData.datetime}</span>
             </div>
             <figure class="flex flex-column mb-20">
                 <picture>
@@ -24,4 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('No se encontró ninguna noticia seleccionada en sessionStorage');
     }
-});
+}
+
+window.addEventListener('DOMContentLoaded', init);

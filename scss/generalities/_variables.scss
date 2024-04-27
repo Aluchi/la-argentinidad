@@ -1,13 +1,15 @@
 // Colores primarios
 $color-primario: #003366; // Azul marino
-$color-secundario: #cc6600; // Naranja oscuro
+$color-primario-hover: #3375b8;
+$color-primario-hover-dos: #004d99;
 
 // Colores de fondo
 $color-fondo: #f2f2f2; // Gris claro para el fondo principal
-$color-fondo-seccion: #ffffff; // Fondo blanco para las secciones
+$color-blanco: #ffffff; // Fondo blanco para las secciones
 
 // Colores de texto
 $color-texto-principal: #333333; // Texto principal en gris oscuro
+$color-descripcion: #5a5a5a;
 $color-texto-seccion: #666666; // Texto en secciones secundarias en gris medio
 
 // Colores de resaltado
@@ -24,3 +26,6 @@ $color-boton-hover: #002147; // Azul más oscuro al pasar el mouse
 
 // Otros colores
 $color-linea-separadora: #cccccc; // Gris medio para líneas separadoras
+$blanco-no-tan-blanco: #dddddd; // Gris medio para líneas separadoras
+$color-casi-negro: #101010;
+$color-negro: #000000;

@@ -1,0 +1,264 @@
+/*----- MAIN PAGE NOTICIAS -----*/
+/*---------- NOTAS (contenido de noticia) ----------*/
+.noticias {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.noticia-item {
+	grid-column: span 1;
+	.noticia-container {
+		img {
+			width: 100%;
+			max-height: 350px;
+			object-fit: cover;
+			overflow: hidden;
+		}
+		cursor: pointer;
+		gap: 12px;
+		transition: all .3s ease;
+	}
+	.noticia-content {
+		p {
+			font-size: 18px;
+			color: $color-descripcion;
+		}
+	}
+	&:hover {
+		.noticia-container {
+			filter: contrast(70%);
+		}
+	}
+}
+.three-col {
+	grid-column: span 2;
+}
+.two-col {
+	grid-column: span 2;
+}
+.noticia-banner {
+	grid-column: span 4;
+	.noticia-container {
+		img {
+			width: 100%;
+			max-height: 500px;
+			object-fit: cover;
+			overflow: hidden;
+		}
+	}
+	.noticia-content {
+		h2 {
+			font-size: 40px;
+		}
+	}
+}
+.main-title {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.divider {
+	grid-column: span 4;
+	width: 100%;
+	border-bottom: $color-linea-separadora 2px solid;
+	padding-top: 4rem;
+}
+.flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+.text-center {
+	text-align: center;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.mb-16 {
+	margin-bottom: 1rem;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.ml-4 {
+	margin-left: .25rem;
+}
+.mt-4 {
+	margin-top: .25rem;
+}
+.pb-12 {
+	padding-bottom: .75rem;
+}
+.pb-16 {
+	padding-bottom: 1rem;
+}
+.subtitle-list {
+	margin-top: -0.25rem;
+	gap: 12px;
+	flex-direction: column;
+}
+.la-timeline {
+	.la-timeline-list {
+		li {
+			position: relative;
+			border-left: 2px solid $color-linea-separadora;
+			padding-left: .65625rem;
+			&::before {
+				content: "";
+				width: .3125rem;
+				height: .3125rem;
+				border-radius: .5rem;
+				background: $color-casi-negro;
+				top: 0;
+				left: -0.1875rem;
+				z-index: 2;
+				position: absolute;
+			}
+			div {
+				time {
+					color: $color-descripcion;
+				}
+			}
+		}
+	}
+}
+.sidebar-notice {
+	.description-container {
+		color: $color-texto-principal;
+		transition: all .2s ease;
+	}
+	&:hover {
+		.description-container {
+			color: $color-primario-hover;
+			transition: all .2s ease;
+		}
+	}
+}
+
+.last-news {
+	width: 100%;
+	border-bottom: 2px solid $color-linea-separadora;
+	h3 {
+		font-weight: 100;
+	}
+}
+.description-container {
+	h2 {
+		font-size: 1.125rem;
+	}
+}
+.--font-2xs {
+	font-size: .75rem;
+	line-height: 130%;
+}
+.texto-principal-de-nota {
+	h1 {
+		font-size: 3rem;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+		color: $color-descripcion;
+	}
+}
+figure {
+	picture {
+		img {
+			width: 100%;
+			max-height: 600px;
+			object-fit: cover;
+			overflow: hidden;
+		}
+	}
+	figcaption {
+		padding: 15px 0px;
+		border-bottom: 2px solid $color-linea-separadora;
+		gap: 5px;
+		span {
+			color: $color-texto-seccion;
+			font-size: 17px;
+		}
+	}
+}
+
+
+// DARK MODE
+/*---------- MODO OSCURO TOGGLE ----------*/
+.dark-mode-toggle {
+	border: 1px solid $color-casi-negro;
+	padding: 10px;
+	border-radius: 15px;
+	i {
+		font-size: 20px;
+	}
+}
+.dark-mode-toggle.dark-mode-active {
+	border: 1px solid $color-blanco;
+	color: $color-blanco;
+}
+body.dark {
+	background-color: $color-casi-negro;
+}
+div.grid-wrapper.dark {
+	header {
+		.header-options {
+			.options {
+				button {
+					color: $color-blanco;
+					i {
+						color: $color-blanco;
+					}
+				}
+			}
+		}
+		.header-dolar-info {
+			ul {
+				li {
+					color: $color-primario-hover;
+				}
+			}
+		}
+	}
+	main {
+		h2 {
+			color: $color-primario-hover;
+		}
+		.texto-principal-de-nota {
+			h1 {
+				color: $color-primario-hover;
+			}
+			span {
+				color: $color-texto-seccion;
+			}
+		}
+		p {
+			color: $color-blanco;
+		}
+	}
+	aside {
+		h3 {
+			color: $color-blanco;
+		}
+		
+		.sidebar-notice {
+			.description-container {
+				color: $color-primario-hover;
+				transition: all .2s ease;
+			}
+			&:hover {
+				.description-container {
+					color: $color-enlace-hover-gris;
+					transition: all .2s ease;
+				}
+			}
+		}
+	}
+	footer {
+		background-color: $color-negro;
+	}
+
+	
+}
