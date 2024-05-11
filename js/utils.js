@@ -1,3 +1,4 @@
+
 // INFO DÓLAR
 // Cotizaciónes de dólar
 function tiposDeDolar() {
@@ -28,7 +29,7 @@ tiposDeDolar();
 const asideNoticesContainer = document.querySelector("#la-timeline-list");
 
 function cargarNoticiasDeAside() {
-    fetch("../notices.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/la-argentinidad/master/notices.json")
         .then((res) => {
             return res.json();
         })
@@ -68,7 +69,7 @@ cargarNoticiasDeAside();
 
 // Filtrado de noticias del menú hamburguesa por secciones.
 function cargarNoticiasPorSeccion(seccion) {
-    fetch("../notices.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/la-argentinidad/master/notices.json")
         .then((res) => {
             return res.json();
         })

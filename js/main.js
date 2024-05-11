@@ -2,7 +2,7 @@
 const noticesContainer = document.querySelector("#notices-container");
 
 function cargarNoticias() {
-    fetch("../notices.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/la-argentinidad/master/notices.json")
         .then((res) => {
             return res.json();
         })
